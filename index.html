@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas CSS - NIOMIC</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-color: #333333;
+        }
+        .container{
+            margin-left: 400px;
+            margin-top: 50px;
+            color: white;
+            height: 800px;
+        }
+        img{
+            margin-left: 170px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+	<div class="container">
+        <img src="img/lampung.jpg" class="rounded-circle" width="150" height="100" />
+        <form action="#" method="post" class="col-6">
+            <div class="form-group">
+                <label>Nama Lengkap</label>
+                <input type="text" name="username" class="form-control" placeholder="Nama Lengkap" />
+            </div>
+            <div class="form-group">
+                <label>Alamat</label>
+                <textarea
+                    name="name"
+                    class="form-control"
+                    rows="3"
+                ></textarea>
+            </div>
+            <div class="form-group">
+                <label>Alamat Email</label>
+                <input type="email" class="form-control" placeholder="Alamat email (disabled)" disabled/>
+            </div>
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" name="password" class="form-control" placeholder="password" />
+            </div>
+            <div class="form-group">
+                <label>Scan KTP</label>
+                <input type="file" class="form-control-file"/>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="ContohCheckbox1">
+                <label class="custom-control-label" for="ContohCheckbox1">Saya setuju dan telah membaca <font color="#0aa2fa">aturan</font> serta <font color="#0aa2fa">ketentuan</font> yang berlaku</label>
+	        </div></br>
+            <button type="submit" class="btn btn-primary col-12">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
